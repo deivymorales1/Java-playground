@@ -2,12 +2,28 @@
 public class Funciones {
     public static void main(String[] args){
         
-        cuentaRegresiva(10);
-        System.out.println(sumar(4, 4));
+        //cuentaRegresiva(10);
+        System.out.println(sumar(  "Deivy", 4, 9 , 6));
         
-        System.out.println(factorial(5));
+        //System.out.println(factorial(4));
         //System.out.println(saludar("Deivy", 27));
     }
+    
+        
+    // Funcion
+    static int sumar(  String nombre,int...numeros){ // Parametros
+        int suma = 0;
+        for(int num : numeros){
+            suma += num;
+        }
+        System.out.println(nombre);
+        return suma;
+    }
+    
+    // Funcion
+    /*static double sumar(double a, double b){
+        return a + b;
+    }*/
     
     
     static int factorial(int numero){
@@ -27,14 +43,5 @@ public class Funciones {
             System.out.println("El numero llego a cero");
         }
     }
-    
-    // Funcion
-    static int sumar(int a, int b){ // Parametros
-        return a + b;
-    }
-    
-    // Funcion
-    static double sumar(double a, double b){
-        return a + b;
-    }
+
 }
