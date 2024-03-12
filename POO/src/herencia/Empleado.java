@@ -9,7 +9,7 @@ public class Empleado extends Persona {
     private static int contadorEmpleado;
 
     public Empleado(double sueldo, String nombre) {
-        super(nombre); // el super envia el dato a la superclase
+        super(nombre); // sobreescribir en la clase persona
         this.idEmpleado = ++Empleado.contadorEmpleado;
         this.sueldo = sueldo;
     }
@@ -26,6 +26,12 @@ public class Empleado extends Persona {
     public void setSueldo(double sueldo) {
         this.sueldo = sueldo;
     }
+
+    @Override
+    public String obtenerDetalle() {
+        return super.obtenerDetalle() + "Sueldo: " + this.sueldo; // Modifico de la clase persona 
+    }
+    
 
     @Override
     public String toString() {

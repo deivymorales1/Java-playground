@@ -26,6 +26,11 @@ public class Persona {
         this.direccion = direccion;
     }
 
+    public String obtenerDetalle(){
+        return "Nombre: %s Edad: %d ".formatted(this.nombre, this.edad);
+    }
+    
+    
     public String getNombre() {
         return this.nombre;
     }

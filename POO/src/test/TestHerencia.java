@@ -9,17 +9,17 @@ public class TestHerencia {
         //System.out.println(persona1);
         
         // Crear empleado
-        Empleado empleado1 = new Empleado(3000, "Antony");
-        System.out.println(empleado1);
+        Persona persona = new Persona("Deivy", 'M', 27, "Colombia");
+        imprimer(persona);
         
-        Empleado empleado2 = new Empleado(4000, "Joel");
-        System.out.println(empleado2);
-        
-        Empleado empleado3 = new Empleado(5000, "Marcos");
-        System.out.println(empleado3);
-        
+        Empleado empleado = new Empleado(4000, "Joel");
+        imprimer(empleado);
         var fecha = new Date();
-        Clientes cliente1 = new Clientes(fecha, true, "German", 'M', 25, "Helechos");
-        System.out.println(cliente1);
+        Clientes cliente = new Clientes(fecha, true, "German", 'M', 25, "Helechos");
+        imprimer(cliente);
+    }
+    
+    public static void imprimer(Persona persona){
+        System.out.println(persona.obtenerDetalle());
     }
 }
