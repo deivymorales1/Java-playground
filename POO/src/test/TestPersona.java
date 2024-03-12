@@ -10,9 +10,11 @@ public class TestPersona {
         
         // Instanciamos objeto y construimos
         Persona persona1 = new Persona("Deivy", 27, false);
-        System.out.println(persona1.getNombre());
-        persona1.setNombre("Raul");
-        System.out.println(persona1.getNombre());
+        System.out.println(persona1.getNombre()); // Muestro
+        persona1.setNombre("Raul"); // Modifico
+        System.out.println(persona1.getNombre()); // Muestro
+        
+        System.out.println(persona1);
 
     }
 }

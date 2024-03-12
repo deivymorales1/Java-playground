@@ -39,5 +39,11 @@ public class Persona {
     public void setEliminado(boolean eliminado){
         this.eliminado = eliminado;
     }
+
+    @Override
+    public String toString() {
+        return "Persona: [Nombre: %s, Edad: %d, Eliminado:%b]".formatted(this.nombre, this.edad, this.eliminado);
+    }
+    
     
 }
