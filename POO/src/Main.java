@@ -1,12 +1,16 @@
 
-import clases.Calculadora;
-import static java.lang.Math.*;
+import clases.Persona;
 
 // Entry point
 public class Main {
-
+    // Variable constante
+    final int a = 10;
     
     public static void main(String[] args) {
+        
+        
+        // Instanciamos el objeto
+        Persona persona1 = new Persona();
         
         // Instanciamos la clase persona
         //Persona persona1 = new Persona();
@@ -20,14 +24,14 @@ public class Main {
         //persona2.mostrarDatos();
         
         
-        System.out.println(Math.PI);
-        System.out.println(Calculadora.PI);
-        Calculadora.PI = 3.15;
-        System.out.println(Calculadora.PI);
+        //System.out.println(Math.PI);
+        //System.out.println(Calculadora.PI);
+        //Calculadora.PI = 3.15;
+        //System.out.println(Calculadora.PI);
 
-        System.out.println(Calculadora.sumar(40, 20));
+        //System.out.println(Calculadora.sumar(40, 20));
         
-        System.out.println(PI);
+        //System.out.println(PI);
         
     }
     
