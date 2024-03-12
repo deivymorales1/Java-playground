@@ -3,11 +3,11 @@ package clases;
 // Clase persona
 public class Persona {
     // atributos
-    String nombre;
-    int edad;
+    public String nombre;
+    public int edad;
     
     // Metodo de la clase
-    void mostrarDatos(){
+    public void mostrarDatos(){
         System.out.println("nombre: " + nombre);
         System.out.println("edad : " + edad);
     }
