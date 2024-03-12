@@ -3,6 +3,7 @@ package herencia;
 
 
 public class Persona {
+    // Protected sabemos que esta clase va a ser usado por otras clases
     protected String nombre;
     protected char genero;   // Modificador de acceso
     protected int edad;
