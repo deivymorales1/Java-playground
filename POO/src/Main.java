@@ -1,7 +1,7 @@
 
 import clases.Persona;
 import clases.Calculadora;
-
+import clases.Rectangulos;
 
 // Entry point
 public class Main {
@@ -41,6 +41,10 @@ public class Main {
         // Clase calculadora
         Calculadora calcular = new Calculadora();
         System.out.println(calcular.resta(50, 30));
+        
+        // Clase rectangulos
+        Rectangulos r1 = new Rectangulos();
+        System.out.println(r1.area(4, 2));
         
     }
     
