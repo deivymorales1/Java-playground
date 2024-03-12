@@ -1,3 +1,5 @@
+package clases;
+
 // Clase persona
 public class Persona {
     // atributos

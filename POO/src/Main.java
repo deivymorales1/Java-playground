@@ -1,3 +1,6 @@
+
+import clases.Persona;
+
 // Entry point
 public class Main {
 
