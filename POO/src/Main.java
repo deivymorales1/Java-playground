@@ -1,5 +1,7 @@
 
 import clases.Persona;
+import clases.Calculadora;
+
 
 // Entry point
 public class Main {
@@ -12,6 +14,8 @@ public class Main {
         // Instanciamos el objeto
         Persona persona1 = new Persona();
         
+        
+        Persona persona2 = new Persona(); 
         // Instanciamos la clase persona
         //Persona persona1 = new Persona();
         //persona1.nombre = "Deivy";
@@ -32,6 +36,11 @@ public class Main {
         //System.out.println(Calculadora.sumar(40, 20));
         
         //System.out.println(PI);
+        
+        
+        // Clase calculadora
+        Calculadora calcular = new Calculadora();
+        System.out.println(calcular.resta(50, 30));
         
     }
     
