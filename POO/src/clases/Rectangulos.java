@@ -18,10 +18,10 @@ public class Rectangulos {
         return this.base * this.altura;
     }
     
-    public int perimetro(int b, int a){
-        base = b;
-        altura = a;
-        return 2 * (base + altura);
+    public int perimetro(int base, int altura){
+        this.base = base;
+        this.altura = altura;
+        return 2 * (this.base + this.altura);
     }
     
 }
