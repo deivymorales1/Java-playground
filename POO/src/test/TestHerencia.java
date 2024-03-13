@@ -31,7 +31,10 @@ public class TestHerencia {
         Persona persona2 = empleado1;
         System.out.println(persona2);
         
+        Persona p1 = new Persona("Deivy", 'M', 26, "Sat");
+        Persona p2 = new Persona("Deivy", 'M', 26, "Sa");
         
+        System.out.println(p1.equals(p2));
         
     }
     
