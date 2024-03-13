@@ -21,6 +21,17 @@ public class TestHerencia {
         String nombre = "Deivy";
         determinarTipo(nombre);
         
+        // Conversion de tipos
+        // Downcasting
+        Persona persona1 = new Empleado(3000, "Deivy R");
+        Empleado empleado1 = (Empleado) persona1;
+        System.out.println(empleado1.obtenerDetalle());
+        
+        // Upcasting
+        Persona persona2 = empleado1;
+        System.out.println(persona2);
+        
+        
         
     }
     
