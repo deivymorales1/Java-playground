@@ -17,9 +17,28 @@ public class TestHerencia {
         var fecha = new Date();
         Clientes cliente = new Clientes(fecha, true, "German", 'M', 25, "Helechos");
         imprimer(cliente);
+        
+        String nombre = "Deivy";
+        determinarTipo(nombre);
+        
+        
     }
     
     public static void imprimer(Persona persona){
         System.out.println(persona.obtenerDetalle());
     }
+    
+    
+    public static void determinarTipo(Object objeto){
+        if(objeto instanceof Empleado){
+            System.out.println("Es de tipo empleado");
+        }else if(objeto instanceof Clientes){
+            System.out.println("Es de tipo cliente");
+        }else if(objeto instanceof Persona){
+            System.out.println("Es de tipo persona");
+        }else if(objeto instanceof Object){
+            System.out.println("Es de tipo Object");
+        }
+    }
+    
 }
